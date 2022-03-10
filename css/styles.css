@@ -1,0 +1,87 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+
+    --letras: 'Outfit', sans-serif;
+    --bg: hsl(220, 15%, 55%);
+    --gri: hsl(212, 45%, 89%);
+
+      --ft:hsl(220, 15%, 55%);
+
+    --gray: hsl(212, 87%, 3%);
+    --h4: hsl(218, 44%, 22%);
+}
+html {
+    box-sizing: border-box;
+    background-color: var(--gri);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h4 {
+    width: 100%;
+    color: var(--DarkBlue);
+    font-family: var(--letras);
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.card {
+    align-items: center;
+    max-width: 290px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.centrarTexto {
+    text-align: center;
+}
+
+.card__title {
+    font-family: var(--letras);
+    color: var(--h4);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+.card__text {
+    font-family: var(--letras);
+    width: 100%;
+    color: var(--ft);
+
+}
+
+
+.attribution {
+    font-family: var(--letras);
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+}
+
+.footer{ 
+    text-align: center;
+    margin-top: 1rem;
+}
